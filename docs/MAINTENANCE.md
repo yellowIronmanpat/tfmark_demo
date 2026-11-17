@@ -33,7 +33,7 @@ python3 -m http.server 8000 --bind 127.0.0.1
 2. 更新文件、`samples.json` 和 HTML 中的路径、转写、时长、样本标签。继续使用相对路径，不要加以 `/` 开头的站点根路径。
 3. 如果确实更换了音频或图，先核对新文件来源，再更新 `asset-manifest.json` 中对应文件的 SHA-256。可运行 `shasum -a 256 文件路径` 获取新值；不要为了让检查通过而直接覆盖全部旧校验和。
 4. 运行两项本地检查，通过后提交到 `main`。
-5. 在 GitHub 的 Actions 页面确认 **Validate demo** 和 **pages build and deployment** 成功；部署完成后还会自动执行线上文件检查。
+5. 在 GitHub 的 Actions 页面确认 **Validate demo** 和 **pages build and deployment** 成功。Validate demo 会等待当前首页发布，再检查所有线上资源；也可在 Actions → Validate demo → Run workflow 中选择 `main` 手动复查。
 
 论文摘要和作者信息以当前 manuscript 为准。更新架构图时同时替换 PNG 展示图和真正的矢量 PDF。样例文件与总体实验指标是两种证据，不要把历史指标当作这些重新导出文件的实测值。
 

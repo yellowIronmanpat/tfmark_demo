@@ -135,9 +135,26 @@ def local_checks():
     return sorted(files)
 
 
-def online_checks(base_url, paths):
+def online_checks(base_url, paths, wait_seconds=0):
     require(base_url.startswith("https://"), "Online checks require an HTTPS base URL")
     base_url = base_url.rstrip("/") + "/"
+
+    # Pages and this workflow run concurrently. Wait for this commit's homepage
+    # before checking all assets; no privileged workflow_run chain is needed.
+    if wait_seconds:
+        expected_page = hashlib.sha256((ROOT / "index.html").read_bytes()).digest()
+        deadline = time.monotonic() + wait_seconds
+        while True:
+            try:
+                req = Request(base_url, headers={"User-Agent": "TFMark-demo-validation", "Cache-Control": "no-cache"})
+                with urlopen(req, timeout=15) as response:
+                    require(hashlib.sha256(response.read()).digest() == expected_page, "Waiting for the current homepage")
+                break
+            except Exception:
+                if time.monotonic() >= deadline:
+                    raise ValueError("Timed out waiting for Pages to publish this checkout")
+                print("Waiting for the current Pages deployment...", flush=True)
+                time.sleep(5)
 
     def check(path):
         expected = hashlib.sha256((ROOT / path).read_bytes()).digest()
@@ -163,10 +180,11 @@ def online_checks(base_url, paths):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--url", help="Also compare all page assets with this published site")
+    parser.add_argument("--wait", type=int, default=0, help="Seconds to wait for the current homepage before online checks")
     args = parser.parse_args()
     paths = local_checks()
     if args.url:
-        online_checks(args.url, paths)
+        online_checks(args.url, paths, args.wait)
 
 
 if __name__ == "__main__":

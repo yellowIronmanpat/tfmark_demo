@@ -69,7 +69,7 @@ This compares the downloaded bytes with the local checkout. Run it after the Pag
 
 ## Deployment and updates
 
-GitHub Pages publishes **`main` → `/(root)`** at <https://yellowironmanpat.github.io/tfmark_demo/>. Commits to `main` trigger the existing Pages deployment. The validation workflow checks repository contents and runs a separate online check after a successful Pages build.
+GitHub Pages publishes **`main` → `/(root)`** at <https://yellowironmanpat.github.io/tfmark_demo/>. Commits to `main` trigger the existing Pages deployment. The validation workflow checks repository contents, waits for the current homepage to appear, and then verifies the published assets. Pull requests run local checks only. An online check can also be started manually from Actions → Validate demo → Run workflow on `main`.
 
 Edit `index.html` for paper content, CSS for appearance, and JavaScript for playback. For sample changes, update `samples.json`, the matching HTML rows, and the checksums together. Keep paths relative; the website is hosted under `/tfmark_demo/`.
 
