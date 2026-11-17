@@ -46,6 +46,7 @@ thead .ours { color: #084a99; }
 .transcript { font-size: 14px; line-height: 1.65; display: block; }
 .sample-meta { color: var(--muted); font-size: 11px; display: block; margin-top: 9px; letter-spacing: .1px; }
 audio { width: 155px; height: 38px; max-width: 100%; vertical-align: middle; }
+.audio-file { display: block; width: fit-content; margin: 6px auto 0; font-size: 11px; }
 .scroll-hint { color: var(--muted); font-size: 12px; text-align: center; margin: 14px 0 0; }
 .playback-status { min-height: 22px; font-size: 13px; color: #52606d; margin: 12px 0 0; }
 .details { margin-top: 24px; font-size: 14px; color: #52606d; }

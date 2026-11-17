@@ -6,11 +6,11 @@
     "duration_seconds": 9.795,
     "text": "IT'S SUCH A CRUSH AT THE YEARLY MEETING AT ARCH STREET AND THEN THERE'S THE ROW OF SLEEK LOOKING YOUNG MEN WHO LINE THE CURBSTONE AND STARE AT US AS WE COME OUT",
     "audio": {
-      "original": "Original_4970-29095-0027.wav",
-      "audioseal": "AudioSeal_4970-29095-0027.wav",
-      "timbre": "TimbreWatermark_4970-29095-0027.wav",
-      "wavmark": "WavMark_4970-29095-0027.wav",
-      "TFMark": "TFMark_4970-29095-0027.wav"
+      "original": "audio/Original/4970-29095-0027.wav",
+      "audioseal": "audio/AudioSeal/4970-29095-0027.wav",
+      "timbre": "audio/TimbreWatermark/4970-29095-0027.wav",
+      "wavmark": "audio/WavMark/4970-29095-0027.wav",
+      "TFMark": "audio/TFMark/4970-29095-0027.wav"
     }
   },
   {
@@ -20,11 +20,11 @@
     "duration_seconds": 6.845,
     "text": "THE QUESTION IS WHICH OF THE TWO METHODS WILL MOST EFFECTIVELY REACH THE PERSONS WHOSE CONVICTIONS IT IS DESIRED TO AFFECT",
     "audio": {
-      "original": "Original_3570-5695-0008.wav",
-      "audioseal": "AudioSeal_3570-5695-0008.wav",
-      "timbre": "TimbreWatermark_3570-5695-0008.wav",
-      "wavmark": "WavMark_3570-5695-0008.wav",
-      "TFMark": "TFMark_3570-5695-0008.wav"
+      "original": "audio/Original/3570-5695-0008.wav",
+      "audioseal": "audio/AudioSeal/3570-5695-0008.wav",
+      "timbre": "audio/TimbreWatermark/3570-5695-0008.wav",
+      "wavmark": "audio/WavMark/3570-5695-0008.wav",
+      "TFMark": "audio/TFMark/3570-5695-0008.wav"
     }
   },
   {
@@ -34,11 +34,11 @@
     "duration_seconds": 6.225,
     "text": "HER MANNER WAS NEITHER INDEPENDENT NOR ASSERTIVE BUT RATHER ONE OF WELL BRED COMPOSURE AND CALM RELIANCE",
     "audio": {
-      "original": "Original_6829-68771-0030.wav",
-      "audioseal": "AudioSeal_6829-68771-0030.wav",
-      "timbre": "TimbreWatermark_6829-68771-0030.wav",
-      "wavmark": "WavMark_6829-68771-0030.wav",
-      "TFMark": "TFMark_6829-68771-0030.wav"
+      "original": "audio/Original/6829-68771-0030.wav",
+      "audioseal": "audio/AudioSeal/6829-68771-0030.wav",
+      "timbre": "audio/TimbreWatermark/6829-68771-0030.wav",
+      "wavmark": "audio/WavMark/6829-68771-0030.wav",
+      "TFMark": "audio/TFMark/6829-68771-0030.wav"
     }
   },
   {
@@ -48,11 +48,11 @@
     "duration_seconds": 6.525,
     "text": "EITHER HE CALLS MINISTERS THROUGH THE AGENCY OF MEN OR HE CALLS THEM DIRECTLY AS HE CALLED THE PROPHETS AND APOSTLES",
     "audio": {
-      "original": "Original_2830-3980-0010.wav",
-      "audioseal": "AudioSeal_2830-3980-0010.wav",
-      "timbre": "TimbreWatermark_2830-3980-0010.wav",
-      "wavmark": "WavMark_2830-3980-0010.wav",
-      "TFMark": "TFMark_2830-3980-0010.wav"
+      "original": "audio/Original/2830-3980-0010.wav",
+      "audioseal": "audio/AudioSeal/2830-3980-0010.wav",
+      "timbre": "audio/TimbreWatermark/2830-3980-0010.wav",
+      "wavmark": "audio/WavMark/2830-3980-0010.wav",
+      "TFMark": "audio/TFMark/2830-3980-0010.wav"
     }
   },
   {
@@ -62,11 +62,11 @@
     "duration_seconds": 7.435,
     "text": "THEY WERE UPON THE VERGE OF AN OPEN TRAP IN THE FAR CORNER OF THE HUT AND STUTELEY HAD TRIPPED OVER THE EDGE OF THE REVERSED FLAP MOUTH OF THIS PIT",
     "audio": {
-      "original": "Original_61-70970-0025.wav",
-      "audioseal": "AudioSeal_61-70970-0025.wav",
-      "timbre": "TimbreWatermark_61-70970-0025.wav",
-      "wavmark": "WavMark_61-70970-0025.wav",
-      "TFMark": "TFMark_61-70970-0025.wav"
+      "original": "audio/Original/61-70970-0025.wav",
+      "audioseal": "audio/AudioSeal/61-70970-0025.wav",
+      "timbre": "audio/TimbreWatermark/61-70970-0025.wav",
+      "wavmark": "audio/WavMark/61-70970-0025.wav",
+      "TFMark": "audio/TFMark/61-70970-0025.wav"
     }
   },
   {
@@ -76,11 +76,11 @@
     "duration_seconds": 7.795,
     "text": "MUSSULMANS AND GIAOURS THROW KERCHIEFS AT A SMILE AND HAVE NO RUTH FOR ANY WEEPING",
     "audio": {
-      "original": "Original_908-31957-0017.wav",
-      "audioseal": "AudioSeal_908-31957-0017.wav",
-      "timbre": "TimbreWatermark_908-31957-0017.wav",
-      "wavmark": "WavMark_908-31957-0017.wav",
-      "TFMark": "TFMark_908-31957-0017.wav"
+      "original": "audio/Original/908-31957-0017.wav",
+      "audioseal": "audio/AudioSeal/908-31957-0017.wav",
+      "timbre": "audio/TimbreWatermark/908-31957-0017.wav",
+      "wavmark": "audio/WavMark/908-31957-0017.wav",
+      "TFMark": "audio/TFMark/908-31957-0017.wav"
     }
   }
 ]
