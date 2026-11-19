@@ -2,7 +2,7 @@
 
 **[Listen to the demo](https://yellowironmanpat.github.io/tfmark_demo/)**
 
-Audio examples for *TFMark: Robust Speech Watermarking via Time–Frequency Embedding*.
+Audio examples for *TFMark: A Robust Speech Watermarking Method via Time–Frequency Mechanism*.
 Six matched utterances compare Original, AudioSeal, TimbreWatermarking, WavMark, and TFMark (30 WAV files). These samples demonstrate audio quality before attacks.
 
 ## Files and updates

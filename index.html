@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Audio samples for TFMark: Robust Speech Watermarking via Time–Frequency Embedding. Compare original speech with TFMark, AudioSeal, TimbreWatermarking and WavMark.">
+  <meta name="description" content="Audio samples for TFMark: A Robust Speech Watermarking Method via Time–Frequency Mechanism. Compare original speech with TFMark, AudioSeal, TimbreWatermarking and WavMark.">
   <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://yellowironmanpat.github.io/tfmark_demo/">
   <meta property="og:url" content="https://yellowironmanpat.github.io/tfmark_demo/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="TFMark: Robust Speech Watermarking via Time–Frequency Embedding">
+  <meta property="og:title" content="TFMark: A Robust Speech Watermarking Method via Time–Frequency Mechanism">
   <meta property="og:description" content="Listen to original and watermarked LibriSpeech samples from TFMark and three baseline methods.">
-  <title>TFMark: Robust Speech Watermarking via Time–Frequency Embedding</title>
+  <title>TFMark: A Robust Speech Watermarking Method via Time–Frequency Mechanism</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/player.js" defer></script>
 </head>
@@ -18,19 +18,19 @@
 <a class="skip-link" href="#results">Skip to audio samples</a>
 <main>
   <header class="paper-header">
-    <h1>TFMark: Robust Speech Watermarking<br>via Time–Frequency Embedding</h1>
+    <h1>TFMark: A Robust Speech Watermarking Method<br>via Time–Frequency Mechanism</h1>
     <p class="authors">Shaoqi Tang<sup>1</sup>, Liping Chen<sup>1,*</sup>, Kong Aik Lee<sup>2</sup>, and Zhenhua Ling<sup>1</sup></p>
     <p class="affiliation"><sup>1</sup> University of Science and Technology of China, China</p>
     <p class="affiliation"><sup>2</sup> The Hong Kong Polytechnic University, China</p>
     <p class="contact"><a href="mailto:tangshaoqi@mail.ustc.edu.cn">tangshaoqi@mail.ustc.edu.cn</a> · <a href="mailto:lipchen@ustc.edu.cn">lipchen@ustc.edu.cn</a> · <a href="mailto:kong-aik.lee@polyu.edu.hk">kong-aik.lee@polyu.edu.hk</a> · <a href="mailto:zhling@ustc.edu.cn">zhling@ustc.edu.cn</a></p>
     <p class="corresponding"><sup>*</sup> Corresponding author</p>
     <div class="keywords" aria-label="Research topics">
-      <span class="keyword">speech watermarking</span><span class="keyword">time–frequency embedding</span><span class="keyword">robustness</span><span class="keyword">neural audio compression</span>
+      <span class="keyword">Speech watermarking</span><span class="keyword">time–frequency watermarking mechanism</span><span class="keyword">robustness</span><span class="keyword">neural audio compression</span>
     </div>
   </header>
   <section aria-labelledby="abstract-title">
     <h2 id="abstract-title">Abstract</h2>
-    <p class="abstract">Reliable speech watermark recovery after neural compression and waveform reconstruction remains challenging under speech quality constraints. This difficulty may arise when these processes alter the speech features used for message embedding, a single spectral representation does not fully expose watermark information, and aggregation overlooks differences in how information at different time–frequency locations contributes to message extraction. To address this problem, this letter proposes TFMark, a robust speech watermarking method based on a time–frequency embedding strategy. During embedding, a channel representation of the message is broadcast over time and frequency and fused with carrier features to predict a bounded residual, which is scaled and added to the magnitude spectrum. During extraction, complementary spectral views are combined, and channel-specific time–frequency weights are learned to aggregate watermark features alongside mean pooling. Experiments on LibriSpeech show an average true positive rate of 61.43% at a 1% false positive rate across six neural-codec conditions, compared with 46.96% for AudioSeal, the strongest baseline on this average. Under HiFi-GAN reconstruction, the rate reaches 90.93%, while all three baselines remain below 1.5%. The watermarked speech attains an SNR of 30.47 dB and a DNSMOS overall score of 3.242.</p>
+    <p class="abstract">Neural compression and waveform reconstruction can preserve speech content while weakening an embedded watermark in parts of the spectrum, making it difficult to recover. To address this problem, this letter proposes TFMark, a robust speech watermarking method based on a time–frequency watermarking mechanism. The same watermark is embedded across time frames and frequency bands. During extraction, watermark features are combined across these locations so that recovery can draw on frequency bands where the watermark is better preserved. Experiments on LibriSpeech show that TFMark improves average watermark detection after neural compression and waveform reconstruction while preserving speech quality. Audio samples are available at <a href="#results">https://yellowironmanpat.github.io/tfmark_demo/</a>.</p>
   </section>
   <section aria-labelledby="architecture-title">
     <h2 id="architecture-title">Model Architecture</h2>
